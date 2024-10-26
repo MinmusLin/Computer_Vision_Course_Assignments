@@ -111,9 +111,9 @@ Since $\{M_i\}$ satisfies closure, associativity, the existence of an identity e
 First, the matrix $M$ is symmetric and can be expressed as:
 
 $$
-M = \begin{bmatrix} 
-\sum_{(x_i, y_i) \in w} (I_x)^2 & \sum_{(x_i, y_i) \in w} (I_x I_y) \\ 
-\sum_{(x_i, y_i) \in w} (I_x I_y) & \sum_{(x_i, y_i) \in w} (I_y)^2 
+M = \begin{bmatrix}
+\sum_{(x_i, y_i) \in w} (I_x)^2 & \sum_{(x_i, y_i) \in w} (I_x I_y) \\
+\sum_{(x_i, y_i) \in w} (I_x I_y) & \sum_{(x_i, y_i) \in w} (I_y)^2
 \end{bmatrix}
 $$
 
@@ -223,6 +223,29 @@ Thus, $A^T A$ is non-singular, or in other words, it is invertible.
 
 ## Question 4
 
+This MATLAB script ( `Code_4.m` ) implements the RANSAC (Random Sample Consensus) algorithm to determine the best-fit line for a set of $(x, y)$ data points. RANSAC is a robust method that attempts to fit a model (in this case, a line) by iteratively selecting random pairs of points, calculating a candidate line, and evaluating how well it fits the dataset.
 
+**Code Overview:**
+
+* **Data Input**: The data points are represented as $(x, y)$ pairs in the `points` matrix.
+* **RANSAC Parameters**:
+  * `maxIter`: Specifies the maximum number of iterations to run the algorithm.
+  * `threshold`: Sets the distance threshold for determining inliers (points close to the line).
+* **RANSAC Algorithm**:
+  * During each iteration, two random points are chosen to form a candidate line.
+  * The slope ( `m` ) and y-intercept ( `b` ) are computed.
+  * The algorithm calculates the distance of all points from the line.
+  * Points within the threshold distance are counted as inliers.
+  * The line model with the highest number of inliers is selected as the best fit.
+* **Visualization**:
+  * The script plots the original data points and the best-fit line found by RANSAC, displaying them on a graph.
+
+The result of the RANSAC line fitting is shown in the figure below.
 
 ![](assets/RANSACLineFitting.png)
+
+## Question 5
+
+
+
+## Question 6
