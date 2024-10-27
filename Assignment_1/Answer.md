@@ -268,8 +268,16 @@ This code is designed to run in a Python environment with OpenCV installed. To e
 
 ## Question 6
 
+This C++ program demonstrates how to use the OpenCV library to perform ORB (Oriented FAST and Rotated BRIEF) feature point detection and matching between two images. The program loads two images, detects keypoints, and computes descriptors using the ORB algorithm. It then matches the descriptors between the two images using a Brute Force matcher. RANSAC is used to filter out outliers, and only inlier matches are visualized. The matching result is displayed in a window, showing connections between corresponding keypoints in both images.
+
+This code must be run in a C++ development environment with OpenCV installed. Ensure that OpenCV is correctly set up and linked with your compiler. The program relies on OpenCV's libraries to perform ORB feature detection, descriptor extraction, and feature matching
+
+The original two images are as follows:
+
 ![](assets/SSEFigure1.bmp)
 
 ![](assets/SSEFigure2.bmp)
+
+The matching result is as follows:
 
 ![](assets/SSEResult.png)
