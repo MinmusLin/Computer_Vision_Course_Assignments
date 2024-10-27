@@ -246,6 +246,24 @@ The result of the RANSAC line fitting is shown in the figure below.
 
 ## Question 5
 
+The Python code ( `Code_5.py` ) performs image stitching using OpenCV. It combines two images by detecting and matching features between them. Here’s a brief overview of how it works:
 
+* **Feature Extraction**: The `extract_features` function uses the SIFT algorithm to detect keypoints and compute descriptors for each image. These features help identify similar points between the two images.
+
+![](assets/DetectedKeypointsLeftImage.png)
+
+![](assets/DetectedKeypointsRightImage.png)
+
+* **Feature Matching**: The `match_features` function matches the descriptors from both images using a Brute-Force Matcher. It filters the matches using the ratio test to retain only high-quality matches, which are then used to compute a homography matrix if enough matches are found.
+
+![](assets/MatchedFeatures.png)
+
+* **Image Stitching**: The `image_stitching` function resizes the input images, extracts features, matches them, and applies the computed homography to warp one image, aligning it with the other. The result is a seamless stitched image.
+
+* **Removing Black Borders**: After stitching, the `crop_black_borders` function removes any black borders that may appear, producing a cleaner final image.
+
+![](assets/StitchedResult.png)
+
+This code is designed to run in a Python environment with OpenCV installed. To execute the program, ensure that you have the OpenCV library ( `cv2` ) properly set up.
 
 ## Question 6

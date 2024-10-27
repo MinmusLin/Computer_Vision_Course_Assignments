@@ -66,8 +66,8 @@ def image_stitching(right_image, left_image):
 
 if __name__ == '__main__':
     # Load images to be stitched
-    right_side_img = cv2.imread('assets/RightFigure.jpg')
     left_side_img = cv2.imread('assets/LeftFigure.jpg')
+    right_side_img = cv2.imread('assets/RightFigure.jpg')
 
     # Perform stitching and display the result
     final_result = image_stitching(right_side_img, left_side_img)
