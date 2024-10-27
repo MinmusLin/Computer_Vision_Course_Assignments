@@ -267,3 +267,9 @@ The Python code ( `Code_5.py` ) performs image stitching using OpenCV. It combin
 This code is designed to run in a Python environment with OpenCV installed. To execute the program, ensure that you have the OpenCV library ( `cv2` ) properly set up.
 
 ## Question 6
+
+![](assets/SSEFigure1.bmp)
+
+![](assets/SSEFigure2.bmp)
+
+![](assets/SSEResult.png)
