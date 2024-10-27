@@ -44,7 +44,7 @@ def image_stitching(right_image, left_image):
     homography_matrix, matches = match_features(key_pts1, desc1, key_pts2, desc2)
     if homography_matrix is None:
         sys.exit()
-    
+
     # Visualize detected keypoints
     keypoints_full1 = detector1.detect(resized_img1, None)
     keypoints_full2 = detector2.detect(resized_img2, None)
@@ -52,12 +52,12 @@ def image_stitching(right_image, left_image):
     img2_with_keypoints = cv2.drawKeypoints(resized_img2, keypoints_full2, None, flags=cv2.DRAW_MATCHES_FLAGS_DRAW_RICH_KEYPOINTS)
     cv2.imshow('Detected Keypoints - Image 1', img1_with_keypoints)
     cv2.imshow('Detected Keypoints - Image 2', img2_with_keypoints)
-    
+
     # Visualize matches between images
     matches_drawing = [cv2.DMatch(m[1], m[0], 0) for m in matches]
     match_visual = cv2.drawMatches(resized_img1, keypoints_full1, resized_img2, keypoints_full2, matches_drawing, None)
     cv2.imshow('Matched Features', match_visual)
-    
+
     # Apply homography to warp the images and combine them
     result_image = cv2.warpPerspective(resized_img1, homography_matrix, (resized_img1.shape[1] + resized_img2.shape[1], resized_img1.shape[0]))
     result_image[0:resized_img2.shape[0], 0:resized_img2.shape[1]] = resized_img2
@@ -66,9 +66,9 @@ def image_stitching(right_image, left_image):
 
 if __name__ == '__main__':
     # Load images to be stitched
-    right_side_img = cv2.imread('SSELeft.png')
-    left_side_img = cv2.imread('SSERight.png')
-    
+    right_side_img = cv2.imread('assets/RightFigure.jpg')
+    left_side_img = cv2.imread('assets/LeftFigure.jpg')
+
     # Perform stitching and display the result
     final_result = image_stitching(right_side_img, left_side_img)
     cv2.imshow('Stitched Result', final_result)
