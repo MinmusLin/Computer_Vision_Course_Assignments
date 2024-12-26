@@ -6,9 +6,9 @@ Computer_Vision_Course_Assignments
 
 ## 仓库简介
 
-A collection of my computer vision course assignments, and course notes.
+A collection of my computer vision course assignments.
 
-2024年同济大学计算机视觉课程作业合集，以及课程笔记。
+2024年同济大学计算机视觉课程作业合集。
 
 > ***Relevant course***
 > * Computer Vision 2024 (2024年同济大学计算机视觉)
