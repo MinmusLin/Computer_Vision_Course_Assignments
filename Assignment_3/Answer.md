@@ -4,7 +4,7 @@
 
 ## Question 2
 
-I have trained a speed bump detection model using YOLOv8. The prediction video is available in PredictionVideo.mp4, and a sample frame from the video is displayed below.
+I have trained a speed bump detection model using YOLOv8. The prediction video is available in `PredictionVideo.mp4`, and a sample frame from the video is displayed below.
 
 ![](assets/PredictionFrame.png)
 
