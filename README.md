@@ -27,6 +27,9 @@ A collection of my computer vision course assignments.
 * [Course Handout](Course_Handout)
 课程讲义
 
+* [Course Review](Course_Review)
+课程复习
+
 * [Introduction to Computer Vision](Introduction_to_Computer_Vision.pdf)
 计算机视觉：原理算法与实践
 
@@ -43,4 +46,4 @@ The code and materials contained in this repository are intended for personal le
 
 ## 文档更新日期
 
-2024年12月27日
+2024年12月28日
