@@ -3,17 +3,13 @@
 In machine learning community, there is an issue named “class imbalance”. Please describe:
 
 * What is the class imbalance problem?
-
 * Why is it a problem for learning algorithms?
-
 * Are there any ways to deal with this issue?
 
 在机器学习领域，存在一个名为“类别不平衡”的问题。请描述：
 
 * 什么是类别不平衡问题？
-
 * 为什么它对学习算法来说是一个问题？
-
 * 有哪些方法可以解决这个问题？
 
 ## Answer
