@@ -85,7 +85,7 @@ x_m & y_m & 1 & 0 & 0 & 0 & -x'_m x_m & -x'_m y_m & -x'_m \\
 \end{bmatrix}
 $$
 
-目标是求解 $A\mathbf{h} = 0$ ，其中 $\mathbf{h} = \begin{bmatrix}h_{11},h_{12},h_{13},h_{21},h_{22},h_{23},h_{31},h_{32},h_{33}\end{bmatrix}$ 。
+目标是求解 $A\mathbf{h} = 0$ ，其中 $\mathbf{h} = \begin{bmatrix}h_{11},h_{12},h_{13},h_{21},h_{22},h_{23},h_{31},h_{32},h_{33}\end{bmatrix}^T $ 。
 
 通过奇异值分解（SVD）来求解单应性矩阵 $H$ ，为了保证单应性矩阵 $H$ 的唯一性，通常将 $H$ 的最后一个元素 $h_{33}$ 归一化为 1。
 
