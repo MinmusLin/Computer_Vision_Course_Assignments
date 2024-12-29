@@ -18,6 +18,6 @@ The fundamental theories and tools of the computer vision filed were contributed
 
 **Geoffrey Hinton** 通过深度学习的进步以及反向传播和卷积神经网络的发展，彻底改变了计算机视觉领域。
 
-**David Marr** 从严谨和长期的角度为计算机视觉的发展方向和一些基础算法提供了指导，为该学科的研究建立了清晰的体系。Marr 将视觉描述为从二维视觉阵列（视网膜上的图像）到三维世界描述的输出过程。
+**David Marr** 建立了计算机视觉的研究体系，将视觉描述为从二维视觉阵列（视网膜上的图像）到三维世界的过程。
 
 **Marvin Minsky** 为人工智能和计算机视觉奠定了早期基础，探索了神经网络和感知系统。
