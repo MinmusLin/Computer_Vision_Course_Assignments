@@ -11,3 +11,7 @@ Please present in details how a 3D point $(X, Y, Z)^T$ in the world coordinate s
 请详细说明世界坐标系中的三维点 $(X, Y, Z)^T$ 是如何映射到图像上的像素 $(u, v)$ 的。
 
 ## Answer
+
+![](assets/2024-12-29_20-46-00.png)
+
+![](assets/2024-12-29_20-46-20.png)
