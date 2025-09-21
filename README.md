@@ -25,8 +25,5 @@ A collection of my computer vision course assignments.
 * [Assignment 3](Assignment_3)
 课程作业 3
 
-* [Course Handout](Course_Handout)
-课程讲义
-
 * [Introduction to Computer Vision](Introduction_to_Computer_Vision.pdf)
 计算机视觉：原理算法与实践
