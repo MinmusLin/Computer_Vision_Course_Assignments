@@ -9,10 +9,10 @@
 
 A collection of my computer vision course assignments.
 
-2024年同济大学计算机视觉课程作业合集。
+2024 年同济大学计算机视觉课程作业合集。
 
 > ***Relevant course***
-> * Computer Vision 2024 (2024年同济大学计算机视觉)
+> * Computer Vision 2024 (2024 年同济大学计算机视觉)
 
 ## 仓库组成
 
